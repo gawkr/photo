@@ -1,0 +1,45 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #111;
+  font-family: sans-serif;
+}
+
+.compare {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+}
+
+.overlay {
+  clip-path: inset(0 50% 0 0);
+  transition: clip-path 0.3s ease;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0.5px;
+  height: 100vh;
+  background: blue;
+  z-index: 10;
+  transition: left 0.3s ease;
+}
+
+
+
